@@ -1,0 +1,85 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Resume container */
+.resume-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resume-container:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background-color: #f9fafb;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #e3f2fd;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+/* Editable styles */
+[contenteditable="true"] {
+    outline: none;
+    cursor: text;
+}
+
+[contenteditable="true"]:hover {
+    border-bottom: 1px dotted #007bff;
+}
+
+[contenteditable="true"]:focus {
+    border-bottom: 2px solid #007bff;
+    background-color: #f0f8ff;
+}
